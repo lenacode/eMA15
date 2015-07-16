@@ -96,6 +96,21 @@
             
                    
           </div>
+
+          <!--counter*/-->
+          <section>
+            <center>
+                <div class="navbar-collapse" style="display:none; color:#2da2c8;">
+                    <h3>
+                        <div class="dan" style="display:inline-block;"></div> Days
+                        <div class="sati" style="display:inline-block;"></div> Hours
+                        <div class="minuta" style="display:inline-block;"></div> Minutes
+                        <div class="sekundi" style="display:inline-block;"></div> Seconds
+                    </h3>
+                </div>
+            </center> 
+          </section>
+          
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
 
@@ -512,6 +527,23 @@ For the complete experience we can’t use words, you have to come and see it. W
     <script src="js/custom.js"></script>
 
 
+<script>
+/*Counter*/
+  function counter(){
+   // $('.begins').hide('slow');
+                $('.navbar-collapse').show('slow');
+                var v = new Date().getTime() / 1000;
+                var k = new Date("2015-08-13 00:00:00.00").getTime() / 1000; 
+                var sekundi = k - v;
+                $('.sekundi').empty().html(Math.floor(sekundi % 60));
+                $('.minuta').empty().html(Math.floor((sekundi % 3600) / 60));
+                $('.sati').empty().html(Math.floor((sekundi % 86400) / 3600));
+                $('.dan').empty().html(Math.floor(sekundi / 86400));
+            }
+
+$(document).ready(function(){ setInterval(function(){ counter() }, 1000); });
+
+</script>
 
 </body>
 
