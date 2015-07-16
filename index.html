@@ -97,19 +97,6 @@
                    
           </div>
 
-          <!--counter*/-->
-          <section>
-            <center>
-                <div class="navbar-collapse" style="display:none; color:#2da2c8;">
-                    <h3>
-                        <div class="dan" style="display:inline-block;"></div> Days
-                        <div class="sati" style="display:inline-block;"></div> Hours
-                        <div class="minuta" style="display:inline-block;"></div> Minutes
-                        <div class="sekundi" style="display:inline-block;"></div> Seconds
-                    </h3>
-                </div>
-            </center> 
-          </section>
           
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
@@ -131,8 +118,25 @@
 
       <!-- BEGIN SLIDER AREA-->
       <div class="slider_area">
+ 
+          
         <!-- BEGIN SLIDER-->          
         <div id="slides">
+ 
+
+        <!--counter*/-->
+          <section>
+            <center>
+                <div class="slides-navigation" style=" color:#337ab7">
+                    <h1>
+                        <div class="dan" style="display:inline-block;"></div> Days
+                        <div class="sati" style="display:inline-block;"></div> Hours
+                        <div class="minuta" style="display:inline-block;"></div> Minutes
+                        <div class="sekundi" style="display:inline-block;"></div> Seconds
+                    </h1>
+                </div>
+            </center> 
+          </section>
           <ul class="slides-container">
 
             <!-- THE FIRST SLIDE-->
@@ -531,7 +535,7 @@ For the complete experience we can’t use words, you have to come and see it. W
 /*Counter*/
   function counter(){
    // $('.begins').hide('slow');
-                $('.navbar-collapse').show('slow');
+                $('.slides-navigation').show('slow');
                 var v = new Date().getTime() / 1000;
                 var k = new Date("2015-08-13 00:00:00.00").getTime() / 1000; 
                 var sekundi = k - v;
