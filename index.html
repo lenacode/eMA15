@@ -108,8 +108,8 @@
               <li><a href="#sarajevo">Sarajevo</a></li> 
               <li><a href="#news">News</a></li> 
               <li><a href="#participants">Participants</a></li> 
-              <!--li><a href="#shedule">Shedule</a></li> 
-              <li><a href="#gallery">Gallery</a></li>-->               
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#gallery">Gallery</a></li>               
               <!--li><a href="#organizers">Organizers</a></li>
 	      <!--<li><a href="#partners">Partners</a></li>                          
             </ul>           
@@ -476,6 +476,65 @@ For the complete experience we can’t use words, you have to come and see it. W
     </section>>
     <!--=========== END NEWS SECTION ================-->
 
+<br></br>
+<br></br>
+    <!--=========== START CONTACT SECTION ================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="about_area">
+              <!-- START CONTACT HEADING -->
+              <div class="heading" style="margin-top:120px">
+                <h2 class="wow fadeInLeftBig">CONTACT</h2>
+                  
+                  <div class="about">
+                <div class="row">
+                  <div class="col-lg-8">
+                <div class="boxed-grey"  ng-controller="FeedbackController" style="margin-bottom:30px;">
+                    <form id="contact-form" id="feedbackForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <div class="input-group">
+                                  <input type="text" name="name" size="40" class="formf-control" placeholder="Enter your name" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <div class="input-group">
+                                    <input type="email" name="email" size="40" class="formf-control" placeholder="Enter email" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="msg">
+                            <div class="form-group">
+                                <label>Message</label>
+                                <div class="input-group">
+                                  <textarea name="message" class="formf-control" rows="6" cols="35" required="required" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary" id="btnf" ng-disabled="feedbackForm.$invalid">Send message</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>      
+              </div>  
+        </div>
+         </div>
+        </div>
+      </div>
+    </section>>
+    <!--=========== END CONTACT SECTION ================-->
 <br></br>
 <br></br>
 
