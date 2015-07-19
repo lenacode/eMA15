@@ -1,0 +1,84 @@
+/*------CONTAINER------*/
+
+.tuna {
+	width: 1120px;
+	margin: 0 auto 0 auto;
+}
+
+/*------LIST------*/
+.tuna ul {
+	list-style-type: none;
+}
+
+.tuna li {
+	float: left;
+	position: relative;
+	width: 213px;
+	height: 213px;
+	overflow: hidden;
+}
+
+.tuna li:hover {
+	cursor: pointer;
+}
+/*------PARAGRAPH------*/
+.tuna li p {
+	position: absolute;
+	color: transparent;
+	font: 200 14px/130px 'Arvo', Helvetica, Arial, sans-serif;
+	background: transparent;
+	width: 213px;
+	height: 213px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	text-transform: uppercase;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.tuna li:hover p {
+	color: white;
+	background: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+
+/*------IMAGES------*/
+.tuna img {
+	width: 213px;
+	height: 213px;
+	
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.tuna li:hover img {
+	height: 250px;
+	width: 250px;
+}
+
+/*------MEDIA QUERIES------*/
+@media screen and (max-width: 1120px) {
+	  .tuna {
+		width: 840px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	  .tuna {
+		width: 560px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	  .tuna {
+		width: 280px;
+	}
+}
