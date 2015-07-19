@@ -27,7 +27,8 @@
 	<meta property="og:image" content="http://ema.eestec-sa.ba/images/share.png"/>
     <!-- CSS
     ================================================== -->       
-    <!-- Bootstrap css file-->
+ 
+  <!-- Bootstrap css file-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font awesome css file-->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -43,6 +44,8 @@
     <link id="orginal" href="css/default-theme.css" rel="stylesheet">
     <!-- Main css file -->
     <link href="style.css" rel="stylesheet">
+
+
    
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -96,15 +99,17 @@
             
                    
           </div>
+
+          
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
 
               <li><a href="#about">About</a></li>
               <li><a href="#sarajevo">Sarajevo</a></li> 
               <li><a href="#news">News</a></li> 
-              <!--li><a href="#participants">Participants</a></li> 
-              <li><a href="#shedule">Shedule</a></li> 
-              <li><a href="#gallery">Gallery</a></li>-->               
+              <li><a href="#participants">Participants</a></li> 
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>               
               <!--li><a href="#organizers">Organizers</a></li>
 	      <!--<li><a href="#partners">Partners</a></li>                          
             </ul>           
@@ -116,8 +121,25 @@
 
       <!-- BEGIN SLIDER AREA-->
       <div class="slider_area">
+ 
+          
         <!-- BEGIN SLIDER-->          
         <div id="slides">
+ 
+
+        <!--counter*/-->
+          <section>
+            <center>
+                <div class="slides-navigation" style=" color:#337ab7">
+                    <h1>
+                        <div class="dan" style="display:inline-block;"></div> Days
+                        <div class="sati" style="display:inline-block;"></div> Hours
+                        <div class="minuta" style="display:inline-block;"></div> Minutes
+                        <div class="sekundi" style="display:inline-block;"></div> Seconds
+                    </h1>
+                </div>
+            </center> 
+          </section>
           <ul class="slides-container">
 
             <!-- THE FIRST SLIDE-->
@@ -454,10 +476,110 @@ For the complete experience we can’t use words, you have to come and see it. W
     </section>>
     <!--=========== END NEWS SECTION ================-->
 
+    <!--=========== BEGIN PARTICIPANTS SECTION ================-->
+    <section id="participants">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="about_area">
+              <!-- START PARTICIPANTS HEADING -->
+              <div class="heading" style="margin-top:120px">
+                <h2 class="wow fadeInLeftBig">Particpants</h2>
+              </div>
+  
+<link rel="stylesheet" type="text/css" media="screen" href="photo.css"/> 
 
-    <br></br>
+  <div class="tuna">
+      <ul>
+         <li><p>Dijana Pavlović</p><img src="images/ps/dij.jpg"></li>
+         <li><p>Ezgi Öner</p><img src="images/ps/ezgi.jpg"></li>
+         <li><p>Pascal Lagerweij</p><img src="images/ps/pasc.jpg"></li>
+         <li><p>Paula Wesołowska</p><img src="images/ps/paula.jpg"></li>
+	     <li><p>Magdalena Janus</p><img src="images/ps/magda.jpg"></li>
+         <li><p>Zvonimir Relja</p><img src="images/ps/zvo.jpg"></li>
+         <li><p>Diana Andreea Cojocaru</p><img src="images/ps/dia.jpg"></li>
+         <li><p>Bartosz Kawlatow</p><img src="images/ps/bart.jpg"></li>
+         <li><p>Idil Kanpolat</p><img src="images/ps/idi.jpg"></li>
+	     <li><p>Jelisaveta Ilić</p><img src="images/ps/joja.jpg"></li>
+         <li><p>Konstantinos Tsioleridis</p><img src="images/ps/kon.jpg"></li>
+         <li><p>Ida Penezić</p><img src="images/ps/ida.jpg"></li>
+         <li><p>Maja Vidakovic</p><img src="images/ps/maja.jpg"></li>
+         <li><p>Francesco Gatto</p><img src="images/ps/gato.jpg"></li>
+	     <li><p>Ognjen Petrović</p><img src="images/ps/ogi.jpg"></li>
+      </ul>
+   </div>
+               </div>
+              </div>     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	</div>
+  </section>
+    <!--=========== END PARTICIPANTS SECTION ================-->
 
-     <!--=========== BEGAIN FOOTER ================-->
+	<!--=========== START CONTACT SECTION ================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="about_area">
+              <!-- START CONTACT HEADING -->
+              <div class="heading" style="margin-top:120px">
+                <h2 class="wow fadeInLeftBig">CONTACT</h2>
+                  
+                  <div class="about">
+                <div class="row">
+                  <div class="col-lg-8">
+                <div class="boxed-grey"  ng-controller="FeedbackController" style="margin-bottom:30px;">
+                    <form id="contact-form" id="feedbackForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <div class="input-group">
+                                  <input type="text" name="name" size="40" class="formf-control" placeholder="Enter your name" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <div class="input-group">
+                                    <input type="email" name="email" size="40" class="formf-control" placeholder="Enter email" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="msg">
+                            <div class="form-group">
+                                <label>Message</label>
+                                <div class="input-group">
+                                  <textarea name="message" class="formf-control" rows="6" cols="35" required="required" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary" id="btnf" ng-disabled="feedbackForm.$invalid">Send message</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>      
+              </div>  
+        </div>
+         </div>
+        </div>
+      </div>
+    </section>>
+    <!--=========== END CONTACT SECTION ================-->
+
+    <!--=========== BEGAIN FOOTER ================-->
      <footer id="footer" style="margin-top:120px">
        <div class="container">
          <div class="row">
@@ -512,6 +634,23 @@ For the complete experience we can’t use words, you have to come and see it. W
     <script src="js/custom.js"></script>
 
 
+<script>
+/*Counter*/
+  function counter(){
+   // $('.begins').hide('slow');
+                $('.slides-navigation').show('slow');
+                var v = new Date().getTime() / 1000;
+                var k = new Date("2015-08-13 00:00:00.00").getTime() / 1000; 
+                var sekundi = k - v;
+                $('.sekundi').empty().html(Math.floor(sekundi % 60));
+                $('.minuta').empty().html(Math.floor((sekundi % 3600) / 60));
+                $('.sati').empty().html(Math.floor((sekundi % 86400) / 3600));
+                $('.dan').empty().html(Math.floor(sekundi / 86400));
+            }
+
+$(document).ready(function(){ setInterval(function(){ counter() }, 1000); });
+
+</script>
 
 </body>
 
