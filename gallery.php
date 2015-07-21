@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
-
+     <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!--Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
@@ -56,22 +57,18 @@
     <script src="gallery/js/modernizr.min.js"></script>
       
     <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
     <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
       
-       <script type="text/javascript">
-            $(document).ready(function() {
-            $(".fancybox").fancybox();
-            });
-        </script>
+   
   </head>
 
 
@@ -156,7 +153,7 @@
             $i = 0;
             foreach($files as $directoryname):?>
             	<figure>
-						<a href="javascript:;" class="photostack-img" id="<?php echo 'gallery'.$i; ?>"><img src="<?php echo $dirname."/".$files[$i]."/tab.JPG"; ?>" alt="slika"/></a>
+						<a href="javascript:;" class="<?php echo "gallery".$i;?>" id="<?php echo 'gallery'.$i; ?>"><img src="<?php echo $dirname."/".$files[$i]."/tab.JPG"; ?>" alt="slika"/></a>
 						<figcaption>
 							<h2 class="photostack-title"><?php echo $imenagalerija[$directoryname];  ?></h2>
 							<div class="photostack-back">
@@ -206,8 +203,7 @@
 		<script src="gallery/js/photostack.js"></script>
 		
   
-     <!-- initialize jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.ui.map.js"></script>
@@ -229,6 +225,12 @@
 
     <!-- Custom js-->
     <script src="js/custom.js"></script>
+    
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $(".fancybox").fancybox();
+            });
+        </script>
 <script>
 			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
 			
@@ -238,8 +240,7 @@
 				}
 			} );
             
-             $("#gallery1").click(function() {
-                 console.log("gallery1");
+             $(".gallery0").click(function() {
                 $.fancybox.open([
                     {
                         href : 'images/gallery/gallery1/1.JPG'
@@ -265,7 +266,33 @@
                 });
             });
             
-                  $("#gallery2").click(function() {
+                  $(".gallery1").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                      $(".gallery2").click(function() {
                 $.fancybox.open([
                     {
                         href : 'images/gallery/gallery2/1.JPG'
@@ -291,6 +318,57 @@
                 });
             });
 			
+                      $(".gallery3").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                      $(".gallery4").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
 		</script>
 
 
