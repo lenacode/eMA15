@@ -259,7 +259,6 @@ body {
             $imenagalerija= array($files[0] => "galerija jedan",$files[1] => "galerija dva",$files[2] => "galerija tri",$files[3] => "galerija cetiri",$files[4] => "galerija pet",$files[5] => "galerija sest");
             $opisgalerija= array($files[0] => "opis za galeriju jedan",$files[1] => "opis za galeriju dva",$files[2] => "opis za galeriju tri",$files[3] => "opis za galeriju cetiri",$files[4] => "opis za galeriju pet",$files[5] => "opis za galeriju sest");
         ?>
-<div class="wrap">
        <?php $i = 0; foreach($files as $directoryname):?>
              
 <!--
@@ -278,7 +277,7 @@ body {
 		</div>
     </div>
     <?php $i = $i+1; endforeach;?>
-    </div>
+    
      <!--=========== BEGAIN FOOTER ================-->
      <footer id="footer">
        <div class="container">

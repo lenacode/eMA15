@@ -11,6 +11,9 @@
     <link rel="logo" type="image/png" href="images/logo.png">
     <link rel="shortcut icon" href="img/favicon.ico">
 
+      
+     <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -23,7 +26,7 @@
   	<meta property="og:title" content="eMovie Academy - EESTEC International workshop"/>
  	<meta property="og:url" content="http://ema.eestec-sa.ba/"/>
 	<meta property="og:site_name" content="eMovie Academy - EESTEC International workshop"/>
-	<meta property="og:description" content="EESTEC LC Sarajevo international workshop of making short documentary movies."/
+	<meta property="og:description" content="EESTEC LC Sarajevo international workshop of making short documentary movies."/>
 	<meta property="og:image" content="http://ema.eestec-sa.ba/images/share.png"/>
     <!-- CSS
     ================================================== -->       
@@ -58,8 +61,67 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      
+        <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+      
+            <style>
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+
+body {
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	}
+
+.mosaicflow__column {
+	float:left;
+	}
+
+.mosaicflow__item {
+	position:relative;
+	}
+	.mosaicflow__item img {
+		display:block;
+		width:100%;
+		max-width:500px;
+		height:auto;
+		}
+	.mosaicflow__item p {
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		margin:0;
+		padding:5px;
+		background:hsla(0,0%,0%,.5);
+		color:#fff;
+		font-size:14px;
+		text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+		opacity:0;
+		-webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		   -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		     -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		        transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		}
+	.mosaicflow__item:hover p {
+		opacity:1;
+		}
+	</style>
   </head>
 
+    
 
 <body>
 
@@ -109,9 +171,11 @@
               <li><a href="#news">News</a></li> 
               <li><a href="#participants">Participants</a></li> 
               <li><a href="#contact">Contact</a></li>
+              </ul>
 	      <!--<li><a href="#partners">Partners</a></li>                          
             </ul>           
           </div><!--/.nav-collapse -->
+              </div>
           </div>     
         </nav>  
       </div>
@@ -205,25 +269,28 @@
                 <p align="justify">
 		
 	Our legendary workshop eMovie Academy is back, and it's better than ever!
+                  </p>
+                </div>
+<p>
+                <br>
 <br>
-</br>
 
 Have glamorous events and movie spotlights always been out of reach? Have you always dreamt of experiencing the spirit of Hollywood? If so, you’re in luck! LC Sarajevo will provide you the ideal opportunity to learn everything you have ever wanted to know about movies: producing, editing, acting and much more.
 <br>
-</br>
+<br>
 Europe's most awesome LC is bringing back one of the best workshops in EESTEC history, eMovie Academy, for the 4th time. We are offering you a week of fun, a week of glamour, a week of learning and most of all a week of EESTEC Spirit! Join us from 13th to 20th of August and enjoy the best experience of your life!
 <br>
-</br>
+<br/>
 The academical aspect will contain lectures and workshops about elements of movie making using the latest technologies. You will learn to use professional software tools for movie-making, and at the end you will be able to make your own movie!
 <br>
-</br>
+<br>
 In the period from 14th to 22nd of August Sarajevo will gather movie elite from all over the world in one place, and bring them closer to fans and movie lovers. This is the period of one of the most respected movie festivals in Europe - the Sarajevo Film Festival. During the festival, Sarajevo becomes the center of Europe's best cinema and entertainment! Movie stars such as Angelina Jolie, Morgan Freeman, Brad Pitt and Kevin Spacey are amongst the lucky people who have experienced Sarajevo at its best - don’t miss this opportunity to become one of them!<br>
 But that’s not all! You will be able to explore Sarajevo’s nightlife, cultural diversity, our delicious food, and the hospitality of our citizens.
 <br>
-</br>
+<br>
 We guarantee you a week of unforgettable experiences, education and excitement!
 <br>
-</br>
+<br>
 		</p>
               </div>
 
@@ -315,7 +382,7 @@ Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7
             </div>
           </div>
         </div>
-	</div>
+	
   </section>
     <!--=========== END ABOUT SECTION ================-->
 
@@ -335,16 +402,16 @@ Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7
 Sarajevo, the capital of Bosnia and Herzegovina, surrounded by the Olimpic mountains, placed in the valley of Miljacka river.<br>
 It is the home of Nobel prize winners, Oscar winners, sports champions... It hosts world famous music, film and drama festivals, and welcomes all sorts of world renowned artists, from U2 to Milan's scale chorus. 
 Being Bosnia's most important city, it has felt the full impact of Bosnia's century long reputation of being the point in Europe where East meets West. Because of this, the city is famous for its traditional religious diversity, with adherents of Islam, Orthodoxy, Catholicism and Judaism coexisiting there for centuries.
-<br></br>
+<br><br>
 A very famous and remembered event in the history of Sarajevo, and a significant date in modern history, is the assassination of the Archduke Franz Ferdinand, marking the beginning of World War I.
 Possibly, the most important moment of Sarajevos time was the 1984 Winter Olympic Games. 
 The history of modern Sarajevo begins with the declaration of independence of Bosnia and Herzegovina.
-<br></br>
+<br><br>
 Apart from its rich history and culture, Sarajevo hosts a plethora of cafes, bars, pubs, clubs shopping centers and other interesting destinations where both young and old come to unwind, such as the various hookah (or nargile) bars.
 <br>
 Meeting history and modern time you can see Sarajevos two face marks. Architecture from the Ottoman and Austro-Hungarian period meeting the new growing buildings. Streets of the modern part mixing with the old part of town, the Islamic, Catholic and Jewish religious buildings and their sounds, different cultures, people and their mores all that and so much more colliding into one unique state of the art city.
-<br></br>
-For the complete experience we can’t use words, you have to come and see it. We can only promise you one. You won’t regret it!	<br></br>	</p>
+<br><br>
+For the complete experience we can’t use words, you have to come and see it. We can only promise you one. You won’t regret it!	<br><br>	</p>
               </div>
 
                   <div class="col-lg-6 col-md-6 col-sm-12">
@@ -378,8 +445,7 @@ For the complete experience we can’t use words, you have to come and see it. W
                 </div>
               </div>
             </div>
-          </div>
-        </div>       
+          </div>      
       </section>
     <!--=========== END SARAJEVO SECTION ================-->
 
@@ -465,9 +531,7 @@ For the complete experience we can’t use words, you have to come and see it. W
 	</div>      
               </div>	
     		</div>
-    	   </div>
-    	  </div>
-    	</div>
+    	   
     </section>
     <!--=========== END NEWS SECTION ================-->
 
@@ -509,14 +573,50 @@ For the complete experience we can’t use words, you have to come and see it. W
                         </div>      
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-	</div>
+          
   </section>
     <!--=========== END PARTICIPANTS SECTION ================-->
+
+    <!--=========== BEGIN GALLERY SECTION ================-->
+    <section id="participants">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="about_area">
+              <!-- START PARTICIPANTS HEADING -->
+              <div class="heading" style="margin-top:120px">
+                <h2 class="wow fadeInLeftBig">Gallery</h2>
+        
+              </div>
+ 
+                          </div>
+                        </div> 
+            
+                     <?php 
+            $dirname = "images/gallery";
+            $files = scandir($dirname);
+            $out = array_shift($files);
+            $out = array_shift($files);
+
+            $imenagalerija= array($files[0] => "galerija jedan",$files[1] => "galerija dva",$files[2] => "galerija tri",$files[3] => "galerija cetiri",$files[4] => "galerija pet",$files[5] => "galerija sest");
+            $opisgalerija= array($files[0] => "opis za galeriju jedan",$files[1] => "opis za galeriju dva",$files[2] => "opis za galeriju tri",$files[3] => "opis za galeriju cetiri",$files[4] => "opis za galeriju pet",$files[5] => "opis za galeriju sest");
+        ?>
+       <?php $i = 0; foreach($files as $directoryname):?>
+
+    <div class="mosaicflow" data-item-height-calculation="attribute">
+		<div class="mosaicflow__item">
+          <a href="javascript:;"  ><img src="<?php echo $dirname."/".$files[$i]."/tab.JPG"; ?>" class="<?php echo "gallery".$i;?>"  alt=""></a>
+          
+			<p><?php echo $imenagalerija[$directoryname]; ?></p>
+		</div>
+    </div>
+    <?php $i = $i+1; endforeach;?>
+            
+                    </div>
+                  </div>
+          
+  </section>
+    <!--=========== END GALLERY SECTION ================-->
 
     <!--=========== START CONTACT SECTION ================-->
     <section id="contact">
@@ -589,8 +689,6 @@ For the complete experience we can’t use words, you have to come and see it. W
      <!-- Javascript Files
      ================================================== -->
   
-     <!-- initialize jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.ui.map.js"></script>
@@ -631,6 +729,197 @@ For the complete experience we can’t use words, you have to come and see it. W
 $(document).ready(function(){ setInterval(function(){ counter() }, 1000); });
 
 </script>
+
+   <script src="mosaic/jquery.mosaicflow.js"></script>
+
+    <!-- Custom js-->
+    <script src="js/custom.js"></script>
+    
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $(".fancybox").fancybox();
+            });
+        </script>
+    
+    
+  <script type="text/javascript">
+    $(function(){
+      // See if this is a touch device
+      if ('ontouchstart' in window)
+      {
+        // Set the correct body class
+        $('body').removeClass('no-touch').addClass('touch');
+        
+        // Add the touch toggle to show text
+        $('div.boxInner img').click(function(){
+          $(this).closest('.boxInner').toggleClass('touchFocus');
+        });
+      }
+    });
+  </script>
+    
+<script>
+    
+    
+		
+            
+             $(".gallery0").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery1/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+            
+                  $(".gallery1").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                      $(".gallery2").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+			
+                      $(".gallery3").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                      $(".gallery4").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                          $(".gallery5").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+		</script>
+
 
 </body>
 
