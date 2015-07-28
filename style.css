@@ -645,27 +645,21 @@ div[data-dimension] {
 /* SPONZORI*/
 /*--------------------*/
 
-#Sponsors{
-	margin-top: 120px;
-	height: 200px;
-}
-#Sponsors ul{
+
+#partners ul{
 	list-style: none;
 	height: 50px;
-	width: 1200px;
+	width: 1000px;
 	margin: 0 auto;
 }
-#Sponsors a{
-	display: inline-block;
-	height: 200px;
-}
-#Sponsors li{
+
+#partners li{
 	float:left;
 
 }
-#Sponsors img {
-	padding: 0 20px;
-	height: 200px;
+#partners img {
+	padding: 0 40px 40px 0;
+
 }
 
 
