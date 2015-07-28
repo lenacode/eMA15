@@ -10,7 +10,8 @@
 	#GALLERY SECTION
 	#ORGANIZERS SECTION
 	#PARTNERS SECTION
-  #FOOTER
+  	#FOOTER
+	#SPONSORS
 */
 
 
@@ -640,8 +641,32 @@ div[data-dimension] {
   transition: all 0.5s;
 }
 
+/*--------------------*/
+/* SPONZORI*/
+/*--------------------*/
 
+#Sponsors{
+	margin-top: 120px;
+	height: 200px;
+}
+#Sponsors ul{
+	list-style: none;
+	height: 50px;
+	width: 1200px;
+	margin: 0 auto;
+}
+#Sponsors a{
+	display: inline-block;
+	height: 200px;
+}
+#Sponsors li{
+	float:left;
 
+}
+#Sponsors img {
+	padding: 0 20px;
+	height: 200px;
+}
 
 
 /*======================///////////////
