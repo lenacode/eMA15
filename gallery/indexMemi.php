@@ -8,10 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>eMovie Academy 2015</title>
 
-    <link rel="icon" type="image/png" href="images/logo.png"/>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="logo" type="image/png" href="images/logo.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-	<!--<![endif]-->
+      
+     <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -46,7 +48,7 @@
     <!-- Main css file -->
     <link href="style.css" rel="stylesheet">
 
-<link href="css/raspored.css" rel="stylesheet"> 
+
    
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -59,8 +61,67 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      
+        <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+      
+            <style>
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+
+body {
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	}
+
+.mosaicflow__column {
+	float:left;
+	}
+
+.mosaicflow__item {
+	position:relative;
+	}
+	.mosaicflow__item img {
+		display:block;
+		width:100%;
+		max-width:500px;
+		height:auto;
+		}
+	.mosaicflow__item p {
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		margin:0;
+		padding:5px;
+		background:hsla(0,0%,0%,.5);
+		color:#fff;
+		font-size:14px;
+		text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+		opacity:0;
+		-webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		   -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		     -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		        transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		}
+	.mosaicflow__item:hover p {
+		opacity:1;
+		}
+	</style>
   </head>
 
+    
 
 <body>
 
@@ -79,7 +140,7 @@
     <header id="header">
       <!-- BEGIN MENU -->
       <div class="menu_area">
-        <nav class="navbar navbar-default navbar-fixed-top"> 
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
           <div class="container">
           <div class="navbar-header">
             <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
@@ -92,10 +153,10 @@
 
             <!-- LOGO -->
 
-            <!--TEXT BASED LOGO 
-            <a class="navbar-brand" href="#">eMovie<span>Academy</span></a>-->
+            <!-- TEXT BASED LOGO >
+            <a class="navbar-brand" href="#">eMovie<span>Academy</span></a>
             
-            <!--IMG BASED LOGO-->
+            <!-- IMG BASED LOGO  -->
             <a class="navbar-brand" style="padding-top:0px;margin-top:0px;"><img width="50" src="images/logo.png" alt="logo"></a>  
             
                    
@@ -107,13 +168,14 @@
 
               <li><a href="#about">About</a></li>
               <li><a href="#sarajevo">Sarajevo</a></li> 
-              <li><a href="#news">News</a></li>  
+              <li><a href="#news">News</a></li> 
               <li><a href="#participants">Participants</a></li> 
-              <li><a href="#schedule">Schedule</a></li>
-              <li><a href="#partners">Partners</a></li>
-              <li><a href="#contact">Contact</a></li>                          
+              <li><a href="#contact">Contact</a></li>
+              </ul>
+	      <!--<li><a href="#partners">Partners</a></li>                          
             </ul>           
           </div><!--/.nav-collapse -->
+              </div>
           </div>     
         </nav>  
       </div>
@@ -129,16 +191,16 @@
 
         <!--counter*/-->
           <section>
-            <div style="text-align:center">
-                <div class="slides-navigation" style=" color:#2da2c8">
+            <center>
+                <div class="slides-navigation" style=" color:#337ab7">
                     <h1>
-                        <span class="dan" style="display:inline-block;"></span> Days
-                        <span class="sati" style="display:inline-block;"></span> Hours
-                        <span class="minuta" style="display:inline-block;"></span> Minutes
-                        <span class="sekundi" style="display:inline-block;"></span> Seconds
+                        <div class="dan" style="display:inline-block;"></div> Days
+                        <div class="sati" style="display:inline-block;"></div> Hours
+                        <div class="minuta" style="display:inline-block;"></div> Minutes
+                        <div class="sekundi" style="display:inline-block;"></div> Seconds
                     </h1>
                 </div>
-            </div> 
+            </center> 
           </section>
           <ul class="slides-container">
 
@@ -204,28 +266,31 @@
               <!-- START ABOUT HEADING -->
               <div class="heading">
                 <h2 class="wow fadeInLeftBig">ABOUT eMA</h2>
-                <p style="text-align:justify">
+                <p align="justify">
 		
 	Our legendary workshop eMovie Academy is back, and it's better than ever!
+                  </p>
+                </div>
+<p>
+                <br>
 <br>
-
 
 Have glamorous events and movie spotlights always been out of reach? Have you always dreamt of experiencing the spirit of Hollywood? If so, you’re in luck! LC Sarajevo will provide you the ideal opportunity to learn everything you have ever wanted to know about movies: producing, editing, acting and much more.
 <br>
-
+<br>
 Europe's most awesome LC is bringing back one of the best workshops in EESTEC history, eMovie Academy, for the 4th time. We are offering you a week of fun, a week of glamour, a week of learning and most of all a week of EESTEC Spirit! Join us from 13th to 20th of August and enjoy the best experience of your life!
 <br>
-
+<br/>
 The academical aspect will contain lectures and workshops about elements of movie making using the latest technologies. You will learn to use professional software tools for movie-making, and at the end you will be able to make your own movie!
 <br>
-
+<br>
 In the period from 14th to 22nd of August Sarajevo will gather movie elite from all over the world in one place, and bring them closer to fans and movie lovers. This is the period of one of the most respected movie festivals in Europe - the Sarajevo Film Festival. During the festival, Sarajevo becomes the center of Europe's best cinema and entertainment! Movie stars such as Angelina Jolie, Morgan Freeman, Brad Pitt and Kevin Spacey are amongst the lucky people who have experienced Sarajevo at its best - don’t miss this opportunity to become one of them!<br>
 But that’s not all! You will be able to explore Sarajevo’s nightlife, cultural diversity, our delicious food, and the hospitality of our citizens.
 <br>
-
+<br>
 We guarantee you a week of unforgettable experiences, education and excitement!
 <br>
-
+<br>
 		</p>
               </div>
 
@@ -245,7 +310,7 @@ We guarantee you a week of unforgettable experiences, education and excitement!
                           <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
 
-			<p style="text-align:justify">
+			<p align="justify">
 eMovie Academy showed its great success, so LC Sarajevo decided to continue tradition. 
 During eMA 2010, 2011 and 2013 we had a lot of work to be done and we did it extreamly well.
 Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7jgZUxX0" style="color: #0099FF;">link</a> you can see how it looked like 2011.
@@ -256,11 +321,11 @@ Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7
                         <!-- START SINGLE FEATURED ITEAM #2 -->
                         <div class="panel panel-default wow fadeInLeft">
                           <div class="panel-heading">
-                            <div class="panel-title">
+                            <h4 class="panel-title">
                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          				
+          
                               </a>
-                            </div>
+                            </h4>
                           </div>
                           <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -317,7 +382,7 @@ Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7
             </div>
           </div>
         </div>
-	</div>
+	
   </section>
     <!--=========== END ABOUT SECTION ================-->
 
@@ -333,20 +398,20 @@ Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7
               <!-- START ABOUT HEADING -->
               <div class="heading" style="margin-top:120px">
                 <h2 class="wow fadeInLeftBig">SARAJEVO</h2>
-                <p style="text-align:justify">
+                <p align="justify">
 Sarajevo, the capital of Bosnia and Herzegovina, surrounded by the Olimpic mountains, placed in the valley of Miljacka river.<br>
 It is the home of Nobel prize winners, Oscar winners, sports champions... It hosts world famous music, film and drama festivals, and welcomes all sorts of world renowned artists, from U2 to Milan's scale chorus. 
 Being Bosnia's most important city, it has felt the full impact of Bosnia's century long reputation of being the point in Europe where East meets West. Because of this, the city is famous for its traditional religious diversity, with adherents of Islam, Orthodoxy, Catholicism and Judaism coexisiting there for centuries.
-<br>
+<br><br>
 A very famous and remembered event in the history of Sarajevo, and a significant date in modern history, is the assassination of the Archduke Franz Ferdinand, marking the beginning of World War I.
 Possibly, the most important moment of Sarajevos time was the 1984 Winter Olympic Games. 
 The history of modern Sarajevo begins with the declaration of independence of Bosnia and Herzegovina.
-<br>
+<br><br>
 Apart from its rich history and culture, Sarajevo hosts a plethora of cafes, bars, pubs, clubs shopping centers and other interesting destinations where both young and old come to unwind, such as the various hookah (or nargile) bars.
 <br>
 Meeting history and modern time you can see Sarajevos two face marks. Architecture from the Ottoman and Austro-Hungarian period meeting the new growing buildings. Streets of the modern part mixing with the old part of town, the Islamic, Catholic and Jewish religious buildings and their sounds, different cultures, people and their mores all that and so much more colliding into one unique state of the art city.
-<br>
-For the complete experience we can’t use words, you have to come and see it. We can only promise you one. You won’t regret it!	<br>	</p>
+<br><br>
+For the complete experience we can’t use words, you have to come and see it. We can only promise you one. You won’t regret it!	<br><br>	</p>
               </div>
 
                   <div class="col-lg-6 col-md-6 col-sm-12">
@@ -375,13 +440,12 @@ For the complete experience we can’t use words, you have to come and see it. W
                         </div>
                       </div>
                       <!-- END FEATURED SLIDER -->
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          </div>
-	 
+          </div>      
       </section>
     <!--=========== END SARAJEVO SECTION ================-->
 
@@ -399,7 +463,7 @@ For the complete experience we can’t use words, you have to come and see it. W
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about_featured">
-                      <div class="panel-group" >
+                      <div class="panel-group" id="accordion">
                         <!-- START SINGLE FEATURED ITEAM #1-->
                         <div class="panel panel-default wow fadeInLeft">
                           <div class="panel-heading">
@@ -407,7 +471,7 @@ For the complete experience we can’t use words, you have to come and see it. W
                                  <span></span>Where are our participants staying?
                             </h4>
                           </div>
-                          <div class="panel-collapse collapse in">
+                          <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
                     <p>
 					<br>
@@ -420,13 +484,13 @@ For the complete experience we can’t use words, you have to come and see it. W
                         <!-- START SINGLE FEATURED ITEAM #2 -->
                         <div class="panel panel-default wow fadeInLeft">
                           <div class="panel-heading">
-                            <div class="panel-title">
+                            <h4 class="panel-title">
                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
           
                               </a>
-                            </div>
+                            </h4>
                           </div>
-                          <div  class="panel-collapse collapse">
+                          <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
                             
                             </div>
@@ -435,7 +499,7 @@ For the complete experience we can’t use words, you have to come and see it. W
                         <!-- START SINGLE FEATURED ITEAM #3 -->
                         <div class="panel panel-default wow fadeInLeft">
                           
-                          <div class="panel-collapse collapse">
+                          <div id="collapseThree" class="panel-collapse collapse">
                             
                           </div>
                         </div>
@@ -465,8 +529,9 @@ For the complete experience we can’t use words, you have to come and see it. W
           </div>
         </div>
 	</div>      
-       </div>	
-    </div>   
+              </div>	
+    		</div>
+    	   
     </section>
     <!--=========== END NEWS SECTION ================-->
 
@@ -478,40 +543,41 @@ For the complete experience we can’t use words, you have to come and see it. W
             <div class="about_area">
               <!-- START PARTICIPANTS HEADING -->
               <div class="heading" style="margin-top:120px">
-                <h2 class="wow fadeInLeftBig">Participants</h2>
+                <h2 class="wow fadeInLeftBig">Particpants</h2>
         
               </div>
  
   
-<link property="" rel="stylesheet" type="text/css" media="screen" href="photo.css"/> 
+<link rel="stylesheet" type="text/css" media="screen" href="photo.css"/> 
 
   <div class="tuna">
       <ul>
-         <li><p>Dijana Pavlović <br>LC Belgrade</p><img alt="dijana" src="images/ps/dij.jpg"></li>
-         <li><p>Ezgi Öner <br>LC Ankara</p><img alt="ezgi" src="images/ps/ezgi.jpg"></li>
-         <li><p>Pascal Lagerweij <br>LC Delft</p><img alt="pascal" src="images/ps/pasc.jpg"></li>
-         <li><p>Paula Wesołowska <br>LC Krakow</p><img alt="paula" src="images/ps/paula.jpg"></li>
-	     <li><p>Magdalena Janus <br>LC Krakow</p><img alt="magdalena" src="images/ps/magda.jpg"></li>
-         <li><p>Zvonimir Relja <br>LC Zagreb</p><img alt="zvonimir" src="images/ps/zvo.jpg"></li>
-         <li><p>Diana Andreea Cojocaru <br>LC Bucharest</p><img alt="diana" src="images/ps/dia.jpg"></li>
-         <li><p>Bartosz Kawlatow <br>LC Gliwice</p><img alt="bartozs" src="images/ps/bart.jpg"></li>
-         <li><p>Idil Kanpolat <br>LC Ankara</p><img alt="idil" src="images/ps/idi.jpg"></li>
-	     <li><p>Jelisaveta Ilić <br>LC Belgrade</p><img alt="jelisaveta" src="images/ps/joja.jpg"></li>
-         <li><p>Konstantinos Tsioleridis <br>LC Xanthi</p><img alt="Konstantinos" src="images/ps/kon.jpg"></li>
-         <li><p>Ida Penezić <br>LC Zagreb</p><img alt="ida" src="images/ps/ida.jpg"></li>
-         <li><p>Maja Vidakovic <br>LC Munich</p><img alt="maja" src="images/ps/maja.jpg"></li>
-         <li><p>Francesco Gatto <br>LC Cosenza</p><img alt="francesco" src="images/ps/gato.jpg"></li>
-	     <li><p>Ognjen Petrović <br>LC Belgrade</p><img alt="ognjen" src="images/ps/ogi.jpg"></li>       
+         <li><p>Dijana Pavlović <br>LC Belgrade</p><img src="images/ps/dij.jpg"></li>
+         <li><p>Ezgi Öner <br>LC Ankara</p><img src="images/ps/ezgi.jpg"></li>
+         <li><p>Pascal Lagerweij <br>LC Delft</p><img src="images/ps/pasc.jpg"></li>
+         <li><p>Paula Wesołowska <br>LC Krakow</p><img src="images/ps/paula.jpg"></li>
+	     <li><p>Magdalena Janus <br>LC Krakow</p><img src="images/ps/magda.jpg"></li>
+         <li><p>Zvonimir Relja <br>LC Zagreb</p><img src="images/ps/zvo.jpg"></li>
+         <li><p>Diana Andreea Cojocaru <br>LC Bucharest</p><img src="images/ps/dia.jpg"></li>
+         <li><p>Bartosz Kawlatow <br>LC Gliwice</p><img src="images/ps/bart.jpg"></li>
+         <li><p>Idil Kanpolat <br>LC Ankara</p><img src="images/ps/idi.jpg"></li>
+	     <li><p>Jelisaveta Ilić <br>LC Belgrade</p><img src="images/ps/joja.jpg"></li>
+         <li><p>Konstantinos Tsioleridis <br>LC Xanthi</p><img src="images/ps/kon.jpg"></li>
+         <li><p>Ida Penezić <br>LC Zagreb</p><img src="images/ps/ida.jpg"></li>
+         <li><p>Maja Vidakovic <br>LC Munich</p><img src="images/ps/maja.jpg"></li>
+         <li><p>Francesco Gatto <br>LC Cosenza</p><img src="images/ps/gato.jpg"></li>
+	     <li><p>Ognjen Petrović <br>LC Belgrade</p><img src="images/ps/ogi.jpg"></li>       
       </ul>
 		             </div>
                           </div>
                         </div>      
                     </div>
                   </div>
+          
   </section>
     <!--=========== END PARTICIPANTS SECTION ================-->
 
-    <!--=========== BEGIN ORGANIZERS SECTION ================-->
+    <!--=========== BEGIN GALLERY SECTION ================-->
     <section id="participants">
       <div class="container">
         <div class="row">
@@ -519,364 +585,38 @@ For the complete experience we can’t use words, you have to come and see it. W
             <div class="about_area">
               <!-- START PARTICIPANTS HEADING -->
               <div class="heading" style="margin-top:120px">
-                <h2 class="wow fadeInLeftBig">Organizers</h2>
+                <h2 class="wow fadeInLeftBig">Gallery</h2>
+        
               </div>
  
-  
-		<link property="" rel="stylesheet" type="text/css" media="screen" href="photo.css"/> 
+                          </div>
+                        </div> 
+            
+                     <?php 
+            $dirname = "images/gallery";
+            $files = scandir($dirname);
+            $out = array_shift($files);
+            $out = array_shift($files);
 
-  		<div class="tuna">
-      		<ul>
-		<div class="heading" style="margin-top:60px">
-                	<h3 class="wow fadeInLeftBig" style="color:black;" >Organizing Committee</h3>
-              	</div>
-         		<li><p>Nejra Škandro <br>Main Organizer</p><img alt="nejra" src="images/organizers/NejraSkandro.jpg"></li>
-         	</ul>
-		
-		<ul>
-			<li><p>Anesa Selimović<br>FR Team Leader</p><img alt="anesa" src="images/organizers/anesa.jpg"></li>
-         		<li><p>Ena Jukić <br>IT Team Leader</p><img alt="ena" src="images/organizers/EnaJukic.jpg"></li>
-         		<li><p>Tarek<br>PR Team Leader</p><img alt="tarek" src="images/organizers/tarek.jpg"></li>
-	     		<li><p>Emir Torlak<br>Design Team Leader</p><img alt="emir" src="images/organizers/EmirTorlak.jpg"></li>
-         		<li><p>Elma Sinanovic <br>Contact Person</p><img alt="elma"src="images/organizers/ElmaSinanović.jpg"></li>
-         		<!-- START board of directors-->
-		
-		<div class="heading" style="margin-top:60px">
-                	<h3 class="wow fadeInLeftBig"style="color:black;">Board of LC SARAJEVO</h3>
-              	</div>
-         		<li><p>Emrah Karahan <br>LC Gliwice</p><img alt="emrah" src="images/organizers/karahan.jpg"></li>
-         		<li><p>Mirza Orhanović <br>LC Ankara</p><img alt="mirza" src="images/organizers/Ohranovic.JPG"></li>
-	     		<li><p>Meliha Mešanović <br>LC Belgrade</p><img alt="meliha" src="images/organizers/Nejra Spahić.jpg"></li>
-			<li><p>Nejra Spahić <br>LC Belgrade</p><img alt="meliha" src="images/organizers/Nejra Spahić.jpg"></li>
-         		<li><p>Edita Milišić <br>LC Xanthi</p><img alt="edita" src="images/organizers/Edita Milišić.jpg"></li>
-         		<li><p>Armin Avdić <br>LC Zagreb</p><img alt="armin" src="images/organizers/Armin Avdić.jpg"></li>
-         		<li><p>Emir Košpo <br>LC Munich</p><img alt="emir" src="images/organizers/Emir Košpo.jpg"></li>
-         		
-		<div class="heading" style="margin-top:60px">
-                	<h3 class="wow fadeInLeftBig" style="color:black;">Oversight Committee</h3>
-              	</div>
-			<!-- START supervisory Board-->
-			<li><p>Amina Žgalj <br>LC Cosenza</p><img alt="amina" src="images/organizers/Amina Žgalj.jpg"></li>
-	     		<li><p>Semra Ćurevac <br>LC Belgrade</p><img alt="semra" src="images/organizers/Semra Curevac.jpg"></li>   
-			<li><p>Mirza Kupusović<br>LC Belgrade</p><img alt="mirza" src="images/organizers/MirzaKupusović.jpg"></li>     
-      		</ul>
+            $imenagalerija= array($files[0] => "galerija jedan",$files[1] => "galerija dva",$files[2] => "galerija tri",$files[3] => "galerija cetiri",$files[4] => "galerija pet",$files[5] => "galerija sest");
+            $opisgalerija= array($files[0] => "opis za galeriju jedan",$files[1] => "opis za galeriju dva",$files[2] => "opis za galeriju tri",$files[3] => "opis za galeriju cetiri",$files[4] => "opis za galeriju pet",$files[5] => "opis za galeriju sest");
+        ?>
+       <?php $i = 0; foreach($files as $directoryname):?>
+
+    <div class="mosaicflow" data-item-height-calculation="attribute">
+		<div class="mosaicflow__item">
+          <a href="javascript:;"  ><img src="<?php echo $dirname."/".$files[$i]."/tab.JPG"; ?>" class="<?php echo "gallery".$i;?>"  alt=""></a>
+          
+			<p><?php echo $imenagalerija[$directoryname]; ?></p>
 		</div>
-             </div>
-          </div>      
-       </div>
     </div>
+    <?php $i = $i+1; endforeach;?>
+            
+                    </div>
+                  </div>
+          
   </section>
-
-
-    <!--=========== END ORGANIZERS SECTION ================-->
-    
-    <!--=========== BEGIN SCHEDULE SECTION ================-->
-    <section id="schedule">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="about_area">
-              <!-- START ABOUT HEADING -->
-              <div class="heading" style="margin-top:120px">
-                <h2 class="wow fadeInLeftBig">SCHEDULE</h2>
-                  
-                  <div id="page-wrap">    
-                  <table class="waffle" cellpadding="0" cellspacing="0">
-
-    <tbody>
-        <tr style="height:20px;">
-            
-            <td class="s0"></td>
-            <td class="s1">13.8.</td>
-            <td class="s1">14.8.</td>
-            <td class="s1">15.8.</td>
-            <td class="s1">16.8.</td>
-            <td class="s1">17.8.</td>
-            <td class="s1">18.8.</td>
-            <td class="s1">19.8.</td>
-            <td class="s1">20.8.</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0"></td>
-            <td class="s1">Thursday</td>
-            <td class="s1">Friday</td>
-            <td class="s1">Saturday</td>
-            <td class="s1">Sunday</td>
-            <td class="s1">Monday</td>
-            <td class="s1">Tuesday</td>
-            <td class="s1">Wednesday</td>
-            <td class="s1">Thursday</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">7:00-7:30</td>
-            <td class="s2" rowspan="20">Arrivals </td>
-            <td class="s3" rowspan="2">Wake-up &amp; breakfast</td>
-            <td class="s0"></td>
-            <td class="s3">Wake-up &amp; breakfast</td>
-            <td class="s0"></td>
-            <td class="s0"></td>
-            <td class="s0"></td>
-            <td class="s0" rowspan="5"></td>
-        </tr>
-        <tr style="height:20px;">
-            
-            <td class="s0" dir="ltr">7:30-8:00</td>
-            <td class="s3" rowspan="2">Wake-up &amp; breakfast</td>
-            <td class="s4" dir="ltr" rowspan="27">Trip to Waterfall
-                <br>Kravice</td>
-            <td class="s3" rowspan="2">Wake-up &amp; breakfast</td>
-            <td class="s3" rowspan="2">Wake-up &amp; breakfast</td>
-            <td class="s3" rowspan="2">Wake-up &amp; breakfast</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">8:00-8:30</td>
-            <td class="s5">Getting ready</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">8:30-9:00</td>
-            <td class="s6" dir="ltr">Transportation</td>
-            <td class="s5">Getting ready</td>
-            <td class="s5">Getting ready</td>
-            <td class="s5">Getting ready</td>
-            <td class="s5">Getting ready</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0">9:00-9:30</td>
-            <td class="s7" dir="ltr" rowspan="2">Opening ceremony</td>
-            <td class="s6" dir="ltr">Transportation</td>
-            <td class="s6" dir="ltr">Transportation</td>
-            <td class="s6" dir="ltr">Transportation</td>
-            <td class="s6" dir="ltr">Transportation</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0">9:30-10:00</td>
-            <td class="s8" dir="ltr" rowspan="5">Lectures
-                <br>(Ishak)</td>
-            <td class="s8" rowspan="6">Filming</td>
-            <td class="s8" dir="ltr" rowspan="6">Editing &amp; sound
-                <br>recording</td>
-            <td class="s8" rowspan="6">Editing</td>
-            <td class="s3">Wake-up &amp; breakfast</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">10:00-10:30</td>
-            <td class="s8" dir="ltr" rowspan="4">Lectures
-                <br>(Sabrina)</td>
-            <td class="s2" dir="ltr" rowspan="25">Departures</td>
-        </tr>
-        <tr style="height:20px;">
-            
-            <td class="s0" dir="ltr">10:30-11:00</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0">11:00-11:30</td>
-        </tr>
-        <tr style="height:20px;">
-            
-            <td class="s0">11:30-12:00</td>
-        </tr>
-        <tr style="height:20px;">
-          
-            <td class="s0">12:00-12:30</td>
-            <td class="s3">Lunch</td>
-            <td class="s3">Lunch</td>
-        </tr>
-        <tr style="height:20px;">
-            
-            <td class="s0">12:30-13:00</td>
-            <td class="s8" dir="ltr" rowspan="5">Lectures
-                <br>(Sabrina)</td>
-            <td class="s8" dir="ltr" rowspan="5">Lectures
-                <br>(Emrah)</td>
-            <td class="s3" rowspan="2">Lunch</td>
-            <td class="s3">Lunch</td>
-            <td class="s3">Lunch</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">13:00-13:30</td>
-            <td class="s8" dir="ltr" rowspan="6">Editing</td>
-            <td class="s8" rowspan="6">Editing</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">13:30-14:00</td>
-            <td class="s8" rowspan="11">Filming</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">14:00-14:30</td>
-        </tr>
-        <tr style="height:20px;">
-          
-            <td class="s0" dir="ltr">14:30-15:00</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">15:00-15:30</td>
-            <td class="s9" dir="ltr" rowspan="6">City rally</td>
-            <td class="s9" dir="ltr" rowspan="10">Sightseeing</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">15:30-16:00</td>
-        </tr>
-        <tr style="height:20px;">
-            <td class="s0" dir="ltr">16:00-16:30</td>
-            <td class="s10" dir="ltr" rowspan="3">Free time</td>
-            <td class="s7" dir="ltr" rowspan="4">Closing ceremony</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">16:30-17:00</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">17:00-17:30</td>
-            <td class="s9" dir="ltr" rowspan="6">Ice-breaking
-                <br>games</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">17:30-18:00</td>
-            <td class="s3">Dinner</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">18:00-18:30</td>
-            <td class="s10" dir="ltr" rowspan="4">Team building</td>
-            <td class="s5" dir="ltr" rowspan="2">Getting ready for
-                <br>Red Carpet</td>
-            <td class="s10" rowspan="4">Free time</td>
-        </tr>
-        <tr style="height:20px;">
-            
-            <td class="s0" dir="ltr">18:30-19:00</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">19:00-19:30</td>
-            <td class="s10" rowspan="2">Free time</td>
-            <td class="s11" rowspan="5">Red Carpet
-                <br>(movie premiere)</td>
-        </tr>
-        <tr style="height:20px;">
-            
-            <td class="s0" dir="ltr">19:30-20:00</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">20:00-20:30</td>
-            <td class="s11" dir="ltr" rowspan="5">Barbecue</td>
-            <td class="s3" rowspan="2">Dinner</td>
-            <td class="s3" rowspan="2">Dinner</td>
-            <td class="s5" dir="ltr" rowspan="3">Getting ready for
-                <br>International
-                <br>night</td>
-            <td class="s3" rowspan="2">Dinner</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0" dir="ltr">20:30-21:00</td>
-        </tr>
-        <tr style="height:20px;">
-          
-            <td class="s0" dir="ltr">21:00-21:30</td>
-            <td class="s5" dir="ltr" rowspan="2">Getting ready for
-                <br>party</td>
-            <td class="s5" dir="ltr" rowspan="2">Getting ready for
-                <br>party</td>
-            <td class="s3" dir="ltr">Dinner</td>
-            <td class="s5" dir="ltr" rowspan="2">Getting ready for
-                <br>party</td>
-        </tr>
-        <tr style="height:20px;">
-           
-            <td class="s0">21:30-22:00</td>
-            <td class="s11" dir="ltr" rowspan="2">Hookah night</td>
-            <td class="s11" rowspan="2">International
-                <br>night</td>
-            <td class="s11" rowspan="2">Party</td>
-        </tr>
-        <tr style="height:20px;">
-            
-            <td class="s0">22:00-</td>
-            <td class="s11">Party</td>
-            <td class="s11">Party</td>
-            <td class="s11">Farewell party</td>
-        </tr>
-    </tbody>
-</table>
-
-              </div>
-
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-    <!--=========== END SCHEDULE SECTION ================-->
-
-
-    <!--=========== BEGIN SPONSORS ================-->
-
-    <section id="partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="about_area">
-              <!-- START CONTACT HEADING -->
-              <div class="heading" style="margin-top:120px">
-                <h2 class="wow fadeInLeftBig">PARTNERS</h2>
-					
-                	<div class="panel-heading">
-                            <h5>Annual parners</h5>
-                            <ul style="disply: inline;">
-        				<li><img src="img/Logos/api.png" alt="API"/></li>
-        				<li><img src="img/Logos/rblogo.png" alt="API"/></li>
-        		   </ul>
-                    	</div>
-		</div>
-
-			<div class="panel-heading">
-                           <h5>Project partners</h5>
-      				<ul>
-        				<li><a href="http://www.mpm-pekara.com/"><img src="img/Logos/mpmLogo.jpg" alt="MPM"/></a></li>
-        				<li><a href="http://www.tuborg.com/ba/bs/"><img src="img/Logos/TuborgLogo.jpg" alt="Tuborg"/></a></li>
-      				</ul>
-			</div>
-		</div>
-						
-			<div class="panel-heading">
-                            <h5 >General media partner</h5>
-				<ul>
-=        				<li><a   href="http://www.klix.ba/"><img src="img/Logos/klix.png" alt="Klix"style="vertical-align:middle;"/></a></li>
-      				</ul>
-			<br>
-			</div>
-			</div>
-			
-			<div class="panel-heading">
-                            <h5> Media partners</h5>
-				<ul>
-        				<li><a href="http://www.facetv.ba/"><img src="img/Logos/FaceTVLogo.jpg" alt="FaceTV"/></a></li>
-        				<li><a href="http://radiom.ba/"><img src="img/Logos/RadioMLogo.jpg" alt="RadioM"/></a></li>
-      				</ul>
-			</div>
-			</div>	
-      		</div>  
-    	</section>
-
-
+    <!--=========== END GALLERY SECTION ================-->
 
     <!--=========== START CONTACT SECTION ================-->
     <section id="contact">
@@ -890,22 +630,21 @@ For the complete experience we can’t use words, you have to come and see it. W
           <form>
            <div class="form-group">
     		<label for="exampleInputName1">Name</label>
-    		<input type="text" class="form-control" id="exampleInputName1" placeholder="Name" size="40" required="required" style="border-radius: 0">
+    		<input type="text" class="form-control" id="exampleInputName1" placeholder="Name" size="40" required="required">
   		   </div>
 
   		   <div class="form-group">
     		<label for="exampleInputEmail1">Email address</label>
-    		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" size="40" required="required" style="border-radius: 0">
+    		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" size="40" required="required">
   		   </div>
 
   		   <div class="form-group">
   		    <label for="exampleInputMessage1">Message</label>
-  		    <textarea class="form-control" id="exampleInputMessage1" placeholder="Message" required="required" rows="3" style="border-radius: 0"></textarea>
+  		    <textarea class="form-control" type="text" id="exampleInputMessage1" placeholder="Message" size="100" required="required" rows="3"></textarea>
   		   </div>
 
   		   <div class="col-md-12">
-              <button type="submit" class="btn btn-primary" id="btnf" ng-disabled="feedbackForm.$invalid"
-              style="color: white;background-color: #2da2c8;border-radius: 0;border-color: #2da2c8;">Send message</button>
+              <button type="submit" class="btn btn-primary" id="btnf" ng-disabled="feedbackForm.$invalid">Send message</button>
             </div>
 
   		  </form>
@@ -950,8 +689,6 @@ For the complete experience we can’t use words, you have to come and see it. W
      <!-- Javascript Files
      ================================================== -->
   
-     <!-- initialize jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.ui.map.js"></script>
@@ -992,6 +729,197 @@ For the complete experience we can’t use words, you have to come and see it. W
 $(document).ready(function(){ setInterval(function(){ counter() }, 1000); });
 
 </script>
+
+   <script src="mosaic/jquery.mosaicflow.js"></script>
+
+    <!-- Custom js-->
+    <script src="js/custom.js"></script>
+    
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $(".fancybox").fancybox();
+            });
+        </script>
+    
+    
+  <script type="text/javascript">
+    $(function(){
+      // See if this is a touch device
+      if ('ontouchstart' in window)
+      {
+        // Set the correct body class
+        $('body').removeClass('no-touch').addClass('touch');
+        
+        // Add the touch toggle to show text
+        $('div.boxInner img').click(function(){
+          $(this).closest('.boxInner').toggleClass('touchFocus');
+        });
+      }
+    });
+  </script>
+    
+<script>
+    
+    
+		
+            
+             $(".gallery0").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery1/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+            
+                  $(".gallery1").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                      $(".gallery2").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+			
+                      $(".gallery3").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                      $(".gallery4").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+    
+                          $(".gallery5").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery2/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/5.JPG'
+                    }, {
+                        href : 'images/gallery/gallery2/6.JPG'
+                    }
+
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+		</script>
+
 
 </body>
 

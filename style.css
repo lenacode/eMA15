@@ -824,3 +824,19 @@ div[data-dimension] {
 	.slider_caption {margin-top: 34%;}  
 	
 }
+
+
+.schedule tr
+{
+    margin:10px;
+    text-align: center;
+    
+}
+
+.schedule tr th
+{
+    padding:5px;
+    background-color: gray;
+    
+    border: 1px solid black;
+}
