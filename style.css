@@ -665,7 +665,7 @@ div[data-dimension] {
 	float:left;
 	line-height: 300px;
 	display: block;
-	width:350px ;
+	width:340px ;
 	height: 300px;
 	margin: 30px;
 
@@ -679,7 +679,13 @@ div[data-dimension] {
 	width: 100%;
 }
 
+#klix{
+	margin-left: 30%;
+}
 
+#smg{
+	margin-left: 30%;
+}
 /*======================///////////////
 			start responsive style
 =====================///////////////////////*/
@@ -839,4 +845,17 @@ div[data-dimension] {
     background-color: gray;
     
     border: 1px solid black;
+}
+
+
+.contain {
+max-width:960px;
+text-align:center;
+}
+
+.category {
+position:relative;
+display: inline-block;
+float:left;
+padding:10px;
 }
