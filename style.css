@@ -601,6 +601,8 @@ div[data-dimension] {
 	margin-top: 10px;
 }
 
+
+
 /*--------------------*/
 /* FOOTER */
 /*--------------------*/
@@ -686,6 +688,11 @@ div[data-dimension] {
 #smg{
 	margin-left: 30%;
 }
+
+#no{
+	margin-left: 22%;
+}
+
 /*======================///////////////
 			start responsive style
 =====================///////////////////////*/
