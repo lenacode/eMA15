@@ -477,6 +477,24 @@ For the complete experience we can’t use words, you have to come and see it. W
 		             </div>
                           </div>
                         </div>
+                          
+                <div class="panel panel-default wow fadeInLeft">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                                 <span></span>The 4th eMovie Academy has officially started!
+                            </h4>
+                          </div>
+                          <div class="panel-collapse collapse in">
+                            <div class="panel-body">
+                    <p>
+					<br>
+                		The 4th eMovie Academy has officially started with the Opening ceremony that was held at the Faculty of Electrical Engineering in Sarajevo. Opening ceremony began at 9:30 and it was attended by the participants, our members, sponsors and media representatives FaceTV, Faktor.ba and Stav.  In the following 7 days participants will have the opportunity to learn about history of movie making, how to make a scenario and how to edit a movie. Besides that they will have a chance to get to know rich culture of Sarajevo and Bosnia and Herzegovina. 
+                	</p>
+                	
+		             </div>
+                          </div>
+                        </div>
+                          
                         <!-- START SINGLE FEATURED ITEAM #2 -->
                         <div class="panel panel-default wow fadeInLeft">
                           <div class="panel-heading">
