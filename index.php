@@ -11,6 +11,9 @@
     <link rel="icon" type="image/png" href="images/logo.png"/>
     <link rel="icon" href="img/favicon.ico">
 
+         <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 	<!--<![endif]-->
 
     <!-- Mobile Specific Metas
@@ -59,6 +62,65 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      
+            <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+      
+               <style>
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+
+body {
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	}
+
+.mosaicflow__column {
+	float:left;
+	}
+
+.mosaicflow__item {
+	position:relative;
+	}
+	.mosaicflow__item img {
+		display:block;
+		width:100%;
+		max-width:500px;
+		height:auto;
+		}
+	.mosaicflow__item p {
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		margin:0;
+		padding:5px;
+		background:hsla(0,0%,0%,.5);
+		color:#fff;
+		font-size:14px;
+		text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+		opacity:0;
+		-webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		   -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		     -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		        transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		}
+	.mosaicflow__item:hover p {
+		opacity:1;
+		}
+	</style>
+      
   </head>
 
 
@@ -109,6 +171,7 @@
               <li><a href="#sarajevo">Sarajevo</a></li> 
               <li><a href="#news">News</a></li>  
               <li><a href="#participants">Participants</a></li> 
+                <li><a href="#gallery">Gallery</a></li>
               <li><a href="#schedule">Schedule</a></li>
               <li><a href="#organizers">Organizers</a></li>
               <li><a href="#partners">Partners</a></li>
@@ -512,6 +575,47 @@ For the complete experience we can’t use words, you have to come and see it. W
   </section>
     <!--=========== END PARTICIPANTS SECTION ================-->
 <div style="clear:both;"></div>
+    
+    <!--=========== BEGIN GALLERY SECTION ================-->
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="about_area">
+              <!-- START PARTICIPANTS HEADING -->
+              <div class="heading" style="margin-top:120px">
+                <h2 class="wow fadeInLeftBig">Gallery</h2>
+        
+              </div>
+ 
+                          </div>
+                        </div> 
+            
+                     <?php 
+            $dirname = "images/gallery";
+            $files = scandir($dirname);
+            $out = array_shift($files);
+            $out = array_shift($files);
+
+            $imenagalerija= array($files[0] => "Opening ceremony");
+            
+        ?>
+       <?php $i = 0; foreach($files as $directoryname):?>
+
+    <div class="mosaicflow" data-item-height-calculation="attribute">
+		<div class="mosaicflow__item">
+          <a href="javascript:;"  ><img src="<?php echo $dirname."/".$files[$i]."/tab.JPG"; ?>" class="<?php echo "gallery".$i;?>"  alt=""></a>
+          
+			<p><?php echo $imenagalerija[$directoryname]; ?></p>
+		</div>
+    </div>
+    <?php $i = $i+1; endforeach;?>
+            
+                    </div>
+                  </div>
+          
+  </section>
+    <!--=========== END GALLERY SECTION ================-->
         
     <!--=========== BEGIN SCHEDULE SECTION ================-->
     <section id="schedule">
@@ -877,7 +981,7 @@ For the complete experience we can’t use words, you have to come and see it. W
         				<li><a href="http://www.menprom.ba/"><img src="img/Logos/Menprom - Bronze.jpg" alt="Memprom"/></a></li>
         				<li><a href="http://www.pakcentar.ba/"><img src="img/Logos/Pak centar - Silver.png" alt="Pak centar"/></a></li>
         				<li><a href="http://www.podravka.hr/kompanija/o-podravki/trzista/bosna-i-hercegovina/"><img src="img/Logos/Podravka - Silver.jpg" alt="Podravka"/></a></li>
-        				<li><a href=http://www.chipsway.rs/""><img src="img/Logos/Chips Way - Bronze-1.png" alt="Chips way"/></a></li>
+        				<li><a href="http://www.chipsway.rs/"><img src="img/Logos/Chips Way - Bronze-1.png" alt="Chips way"/></a></li>
         				<li><a href="http://www.preminger.ba/"><img src="img/Logos/Bihaćka pivovara - Bronze-1.png" alt="Bihacka pivovara"/></a></li>
       				</ul>
 			</div>
@@ -909,8 +1013,7 @@ For the complete experience we can’t use words, you have to come and see it. W
       				
       				</ul>
 			</div>
-			</div>	
-      		</div>  
+			 
     	</section>
 
 
@@ -989,8 +1092,7 @@ For the complete experience we can’t use words, you have to come and see it. W
      <!-- Javascript Files
      ================================================== -->
   
-     <!-- initialize jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   
     <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.ui.map.js"></script>
@@ -1031,6 +1133,49 @@ For the complete experience we can’t use words, you have to come and see it. W
 $(document).ready(function(){ setInterval(function(){ counter() }, 1000); });
 
 </script>
+
+   <!-- Custom js-->
+    <script src="js/custom.js"></script>
+    
+    <script src="mosaic/jquery.mosaicflow.js"></script>
+    
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $(".fancybox").fancybox();
+            });
+        </script>
+    
+
+    
+<script>
+    
+    
+		
+            
+             $(".gallery0").click(function() {
+                $.fancybox.open([
+                    {
+                        href : 'images/gallery/gallery1/1.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/2.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/3.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/4.JPG'
+                    }, {
+                        href : 'images/gallery/gallery1/5.JPG'
+                    }
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+               
+		</script>
 
 </body>
 
