@@ -11,10 +11,10 @@
     <link rel="icon" type="image/png" href="images/logo.png"/>
     <link rel="icon" href="img/favicon.ico">
 
-         <!-- initialize jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 	<!--<![endif]-->
+
+               <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -62,8 +62,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-      
-            <!-- Add fancyBox -->
+  </head>
+       <!-- Add fancyBox -->
     <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
@@ -120,9 +120,6 @@ body {
 		opacity:1;
 		}
 	</style>
-      
-  </head>
-
 
 <body>
 
@@ -171,7 +168,7 @@ body {
               <li><a href="#sarajevo">Sarajevo</a></li> 
               <li><a href="#news">News</a></li>  
               <li><a href="#participants">Participants</a></li> 
-                <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#gallery">Gallery</a></li>
               <li><a href="#schedule">Schedule</a></li>
               <li><a href="#organizers">Organizers</a></li>
               <li><a href="#partners">Partners</a></li>
@@ -192,18 +189,17 @@ body {
  
 
         <!--counter*/-->
+<!--
           <section>
             <div style="text-align:center">
-                <div class="slides-navigation" style=" color:#2da2c8">
-                    <h1>
-                        <span class="dan" style="display:inline-block;"></span> Days
-                        <span class="sati" style="display:inline-block;"></span> Hours
-                        <span class="minuta" style="display:inline-block;"></span> Minutes
-                        <span class="sekundi" style="display:inline-block;"></span> Seconds
-                    </h1>
+                <div class="slides-navigation">
+                    <h6>
+                        eMA'15 officially started!
+                    </h6>
                 </div>
             </div> 
           </section>
+-->
           <ul class="slides-container">
 
             <!-- THE FIRST SLIDE-->
@@ -312,7 +308,7 @@ We guarantee you a week of unforgettable experiences, education and excitement!
 			<p style="text-align:justify">
 eMovie Academy showed its great success, so LC Sarajevo decided to continue tradition. 
 During eMA 2010, 2011 and 2013 we had a lot of work to be done and we did it extreamly well.
-Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7jgZUxX0" style="color: #0099FF;">link</a> you can see how it looked like 2011.
+Here are some pictures and on this <a href="https://www.youtube.com/watch?v=yLk7jgZUxX0" target="_blank" style="color: #0099FF;">link</a> you can see how it looked like 2011.
 				</p>
 		             </div>
                           </div>
@@ -475,7 +471,7 @@ For the complete experience we can’t use words, you have to come and see it. W
                             <div class="panel-body">
                     <p>
 					<br>
-                		For this eMA we prepared something special for our participants. They won’t be staying in a regular hostel but in a hostel-house. The hostel is located in the heart of our city and in the center of where all the Sarajevo Film Festival action. A comfortable place, with beautiful garden, and friendly atmosphere is open 0-24h for us. For more information you can visit their web page on this <a href="http://hcc-house.com/" style="color: #0099FF;">link</a>. See you there !
+                		For this eMA we prepared something special for our participants. They won’t be staying in a regular hostel but in a hostel-house. The hostel is located in the heart of our city and in the center of where all the Sarajevo Film Festival action. A comfortable place, with beautiful garden, and friendly atmosphere is open 0-24h for us. For more information you can visit their web page on this <a href="http://hcc-house.com/" target="_blank" style="color: #0099FF;">link</a>. See you there !
                 	</p>
                 	
 		             </div>
@@ -576,6 +572,7 @@ For the complete experience we can’t use words, you have to come and see it. W
     <!--=========== END PARTICIPANTS SECTION ================-->
 <div style="clear:both;"></div>
     
+        
     <!--=========== BEGIN GALLERY SECTION ================-->
     <section id="gallery">
       <div class="container">
@@ -910,9 +907,9 @@ For the complete experience we can’t use words, you have to come and see it. W
               	</div>
               	<li><p>Nejra Spahić <br>Chairwoman</p><img alt="meliha" src="images/organizers/Nejra Spahić.jpg"></li>
          		<li><p>Emrah Karahan <br>VC for internal affairs</p><img alt="emrah" src="images/organizers/karahan.jpg"></li>
-         		<li><p>Mirza Orhanović <br>VC for information tehnologies</p><img alt="mirza" src="images/organizers/Ohranovic.JPG"></li>
+         		<li><p>Mirza Ohranović <br>VC for information tehnologies</p><img alt="mirza" src="images/organizers/Ohranovic.JPG"></li>
 	     		<li><p>Meliha Mešanović <br>VC for public relations</p><img alt="meliha" src="images/organizers/Meliha Mesanovic.jpg"></li>
-         		<li><p>Edita Milišić <br>VC for finances and external affaires</p><img alt="edita" src="images/organizers/Edita Milišić.jpg"></li>
+         		<li><p>Edita Milišić <br>VC for finances and external affairs</p><img alt="edita" src="images/organizers/Edita Milišić.jpg"></li>
          		<li><p>Armin Avdić <br>Contact person</p><img alt="armin" src="images/organizers/Armin Avdić.jpg"></li>
          		<li><p>Emir Košpo <br>Treasurer</p><img alt="emir" src="images/organizers/Emir Košpo.jpg"></li>
          		
@@ -952,9 +949,9 @@ For the complete experience we can’t use words, you have to come and see it. W
                 	<div class="panel-heading">
                             <h5>Annual partners</h5>
                             <ul style="disply: inline;">
-        				<li><a href="http://www.authoritypartners.com/"><img src="img/Logos/api.png" alt="API"/></a></li>
-        				<li><a href="http://www.redbull.com/ba/bs"><img src="img/Logos/rblogo.png" alt="API"/></a></li>
-        				<li><a href="https://www.microsoft.com/bs-ba/"><img src="img/Logos/microsoft.png" alt="ms"/></a></li>
+        				<li><a href="http://www.authoritypartners.com/" target="_blank"><img src="img/Logos/api.png" alt="API"/></a></li>
+        				<li><a href="http://www.redbull.com/ba/bs" target="_blank"><img src="img/Logos/rblogo.png" alt="API"/></a></li>
+        				<li><a href="https://www.microsoft.com/bs-ba/" target="_blank"><img src="img/Logos/microsoft.png" alt="ms"/></a></li>
         		   </ul>
         		   </div>
                     	</div>
@@ -970,29 +967,35 @@ For the complete experience we can’t use words, you have to come and see it. W
                     	</div>
 		</div>
 
-		<div style="clear:both;"></div>
+	
 			<div class="panel-heading">
                            <h5>Project partners</h5>
       				<ul>
-        				<li><a href="http://www.mpm-pekara.com/"><img src="img/Logos/mpmLogo.jpg" alt="MPM" align="left" /></a></li>
-        				<li><a href="http://www.tuborg.com/ba/bs/"><img src="img/Logos/TuborgLogo.jpg" alt="Tuborg" align="center" /></a></li>
+        				<li><a href="http://www.mpm-pekara.com/" target="_blank"><img src="img/Logos/mpmLogo.jpg" alt="MPM" align="left" /></a></li>
+        				<li><a href="http://www.tuborg.com/ba/bs/" target="_blank"><img src="img/Logos/TuborgLogo.jpg" alt="Tuborg" align="center" /></a></li>
         				<li><img src="img/Logos/G3 Spirits - Bronze.jpg" alt="G3" align="right" /></li>
-        				<li><a href="http://www.makzara.ba/"><img src="img/Logos/Mak Zara - Bronze.png" alt="MakZara"/></a></li>
-        				<li><a href="http://www.menprom.ba/"><img src="img/Logos/Menprom - Bronze.jpg" alt="Memprom"/></a></li>
-        				<li><a href="http://www.pakcentar.ba/"><img src="img/Logos/Pak centar - Silver.png" alt="Pak centar"/></a></li>
-        				<li><a href="http://www.podravka.hr/kompanija/o-podravki/trzista/bosna-i-hercegovina/"><img src="img/Logos/Podravka - Silver.jpg" alt="Podravka"/></a></li>
-        				<li><a href="http://www.chipsway.rs/"><img src="img/Logos/Chips Way - Bronze-1.png" alt="Chips way"/></a></li>
-        				<li><a href="http://www.preminger.ba/"><img src="img/Logos/Bihaćka pivovara - Bronze-1.png" alt="Bihacka pivovara"/></a></li>
+        				<li><a href="http://www.makzara.ba/" target="_blank"><img src="img/Logos/Mak Zara - Bronze.png" alt="MakZara"/></a></li>
+        				<li><a href="http://www.menprom.ba/" target="_blank"><img src="img/Logos/Menprom - Bronze.jpg" alt="Memprom"/></a></li>
+        				<li><a href="http://www.podravka.hr/kompanija/o-podravki/trzista/bosna-i-hercegovina/" target="_blank"><img src="img/Logos/Podravka - Silver.jpg" alt="Podravka"/></a></li>
+        				<li><a href="http://www.chipsway.rs/" target="_blank"><img src="img/Logos/Chips Way - Bronze-1.png" alt="Chips way"/></a></li>
+        				<li><a href="http://www.preminger.ba/" target="_blank"><img src="img/Logos/Bihaćka pivovara - Bronze-1.png" alt="Bihacka pivovara"/></a></li>
+        				<li><a href="http://etf.unsa.ba/" target="_blank"><img src="img/Logos/etf.png" alt="etf"/></a></li>
+        				<li><a href="http://www.coca-cola.ba/bs/home/" target="_blank"><img src="img/Logos/cocacola.png" alt="cola"/></a></li>
+        				<li><a href="http://www.pakcentar.ba/" target="_blank"><img src="img/Logos/Pak centar - Silver.png" alt="Pak centar"/></a></li>
+        				<li><a href="http://www.sarajevski-kiseljak.com/" target="_blank"><img src="img/Logos/kiseljak.jpg" alt="kiseljak"/></a></li>
+        				<li><a href="" target="_blank"><img src="img/Logos/ovako.png" alt="ovako"/></a></li>
       				</ul>
 			</div>
 		</div>
-						
+						<br>
+						<br>
+						<br>
 			<div class="panel-heading">
-                            <h5 >General media partner</h5>
+                            <h5 >General media partners</h5>
 				<div id="klix">
 				<ul>
-        				<li><a href="http://www.klix.ba/"><img src="img/Logos/klix.png" alt="Klix"/></a></li>
-        				<li><a href="http://radiom.ba/"><img src="img/Logos/RadioMLogo.jpg" alt="RadioM"/></a></li>
+        				<li><a href="http://www.klix.ba/" target="_blank"><img src="img/Logos/klix.png" alt="Klix"/></a></li>
+        				<li><a href="http://radiom.ba/" target="_blank"><img src="img/Logos/RadioMLogo.jpg" alt="RadioM"/></a></li>
         				</ul>
       				</div>
 			<br>
@@ -1002,18 +1005,20 @@ For the complete experience we can’t use words, you have to come and see it. W
 			<div class="panel-heading">
                             <h5> Media partners</h5>
 				<ul>
-        				<li><a href="http://www.facetv.ba/"><img src="img/Logos/FaceTVLogo.jpg" alt="FaceTV"/></a></li>
-        				<li><a href="http://www.tvalfa.ba/"><img src="img/Logos/alfa.jpg" alt="alfa"/></a></li>
-        				<li><a href="http://tvsa.ba/"><img src="img/Logos/tvsa.png" alt="tvsa"/></a></li>
-        				<li><a href="http://www.kameleon.ba/"><img src="img/Logos/kameleon.png" alt="kameleon"/></a></li>
-        				<li><a href="http://nekinovi-klinci.blogspot.com/"><img src="img/Logos/nnk.jpg" alt="nnk"/></a></li>
-        				<li><a href="http://studomat.ba/"><img src="img/Logos/studomat.jpg" alt="studomat"/></a></li>
-        				<li><a href="http://www.bhrt.ba/bht1/"><img src="img/Logos/bht.jpg" alt="bht"/></a></li>
-        				<li><a href="http://www.rtvvogosca.com.ba/"><img src="img/Logos/vogosca.png" alt="vogosca"/></a></li>
+        				<li><a href="http://www.facetv.ba/" target="_blank"><img src="img/Logos/FaceTVLogo.jpg" alt="FaceTV"/></a></li>
+        				<li><a href="http://www.tvalfa.ba/" target="_blank"><img src="img/Logos/alfa.jpg" alt="alfa"/></a></li>
+        				<li><a href="http://tvsa.ba/" target="_blank"><img src="img/Logos/tvsa.png" alt="tvsa"/></a></li>
+        				<li><a href="http://www.kameleon.ba/" target="_blank"><img src="img/Logos/kameleon.png" alt="kameleon"/></a></li>
+        				<li><a href="http://nekinovi-klinci.blogspot.com/" target="_blank"><img src="img/Logos/nnk.jpg" alt="nnk"/></a></li>
+        				<li><a href="http://studomat.ba/" target="_blank"><img src="img/Logos/studomat.jpg" alt="studomat"/></a></li>
+        				<li><img src="img/Logos/stav.png" alt="stav"/></li>
+        				<li><a href="http://www.bhrt.ba/bht1/" target="_blank"><img src="img/Logos/bht.jpg" alt="bht"/></a></li>
+        				<li><a href="http://www.rtvvogosca.com.ba/" target="_blank"><img src="img/Logos/vogosca.png" alt="vogosca"/></a></li>
+        				<li><a href="http://faktor.ba/" target="_blank"><img src="img/Logos/faktor.png" alt="faktor"/></a></li>
       				
       				</ul>
 			</div>
-			 
+			
     	</section>
 
 
@@ -1074,9 +1079,9 @@ For the complete experience we can’t use words, you have to come and see it. W
            <div class="col-lg-6 col-md-6 col-sm-6">
              <div class="footer_right">
                <ul class="social_nav">
-                 <li><a href="https://www.facebook.com/eestecsarajevo?fref=ts"><i class="fa fa-facebook"></i></a></li>
-                 <li><a href="https://twitter.com/eestecSarajevo"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="https://instagram.com/eestec_lc_sarajevo/"><i class="fa fa-instagram"></i></a></li>
+                 <li><a href="https://www.facebook.com/eestecsarajevo?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                 <li><a href="https://twitter.com/eestecSarajevo" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="https://instagram.com/eestec_lc_sarajevo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                </ul>
              </div>
            </div>
@@ -1092,7 +1097,7 @@ For the complete experience we can’t use words, you have to come and see it. W
      <!-- Javascript Files
      ================================================== -->
   
-   
+  
     <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.ui.map.js"></script>
@@ -1133,9 +1138,6 @@ For the complete experience we can’t use words, you have to come and see it. W
 $(document).ready(function(){ setInterval(function(){ counter() }, 1000); });
 
 </script>
-
-   <!-- Custom js-->
-    <script src="js/custom.js"></script>
     
     <script src="mosaic/jquery.mosaicflow.js"></script>
     

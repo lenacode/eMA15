@@ -74,7 +74,51 @@
     <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
       
-   
+            <style>
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+
+body {
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	}
+
+.mosaicflow__column {
+	float:left;
+	}
+
+.mosaicflow__item {
+	position:relative;
+	}
+	.mosaicflow__item img {
+		display:block;
+		width:100%;
+		max-width:500px;
+		height:auto;
+		}
+	.mosaicflow__item p {
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		margin:0;
+		padding:5px;
+		background:hsla(0,0%,0%,.5);
+		color:#fff;
+		font-size:14px;
+		text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+		opacity:0;
+		-webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		   -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		     -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		        transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+		}
+	.mosaicflow__item:hover p {
+		opacity:1;
+		}
+	</style>
   </head>
 
     

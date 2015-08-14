@@ -68,6 +68,16 @@ h5 {
 	text-transform: uppercase;
 }
 
+h6 {
+  color: #2da2c8;  
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 57px;
+  margin: 0;
+  padding-bottom: 10px;
+  text-transform: none;
+}
+
 img{
  border:none;
 }
@@ -852,17 +862,4 @@ div[data-dimension] {
     background-color: gray;
     
     border: 1px solid black;
-}
-
-
-.contain {
-max-width:960px;
-text-align:center;
-}
-
-.category {
-position:relative;
-display: inline-block;
-float:left;
-padding:10px;
 }
